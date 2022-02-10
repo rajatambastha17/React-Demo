@@ -1,6 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import "./index.css"
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./components/App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // const fname = "Rajat";
 // const lname = "Ambastha";
@@ -35,34 +38,34 @@ import "./index.css"
 //   document.getElementById("root")
 // );
 
-let currDate = new Date();
-currDate = currDate.getHours();
-let greeting = "";
-let cssStyle = { };
-const name = "Rajat";
+// let currDate = new Date();
+// currDate = currDate.getHours();
+// let greeting = "";
+// let cssStyle = { };
+// const name = "Rajat";
 
-if (currDate>=7 && currDate<12) {
-  greeting = "Good Morning";
-  cssStyle.color = "#4FB7A5";
-}
-else if(currDate>=12 && currDate<16) {
-  greeting = "Good Afternoon";
-  cssStyle.color = "#ff8d32";
-}
-else if(currDate>=16 && currDate<20) {
-  greeting = "Good Evening" 
-  cssStyle.color = "#EDAD82";
-}
-else {
-  greeting = "Good Night";
-  cssStyle.color = "#31403C";
-}
+// if (currDate>=7 && currDate<12) {
+//   greeting = "Good Morning";
+//   cssStyle.color = "#4FB7A5";
+// }
+// else if(currDate>=12 && currDate<16) {
+//   greeting = "Good Afternoon";
+//   cssStyle.color = "#ff8d32";
+// }
+// else if(currDate>=16 && currDate<20) {
+//   greeting = "Good Evening"
+//   cssStyle.color = "#EDAD82";
+// }
+// else {
+//   greeting = "Good Night";
+//   cssStyle.color = "#31403C";
+// }
 
-ReactDOM.render (
-  <>
-    <div>
-      <h1>Hello {name}, <span style={cssStyle}>{greeting}</span></h1>
-    </div>
-  </>,
-  document.getElementById('root')
-);
+// ReactDOM.render (
+//   <>
+//     <div>
+//       <h1>Hello {name}, <span style={cssStyle}>{greeting}</span></h1>
+//     </div>
+//   </>,
+//   document.getElementById('root')
+// );
